@@ -1,0 +1,61 @@
+.Auth{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    column-gap: 6rem;
+    max-width: 80%;
+    margin: 0 auto;
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .logo{
+            margin: 0 auto;
+        }
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+
+        p{
+            margin: 0;
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+
+        .divider{
+            color: #171A23;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .ui.button{
+            background-color: #af8221;
+            color: $font;
+            border-radius: 1.6rem;
+        }
+
+        .ui.input{
+
+            margin-bottom: 1.4rem;
+
+            input{
+                background-color: #2B2F3B;
+                color:$font;
+                
+
+                &:focus{
+                    border-color: $font;
+                }
+            }
+
+            
+        }
+    }
+}
