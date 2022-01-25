@@ -35,6 +35,11 @@
             margin-bottom: 2rem;
         }
 
+        .forgot{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
         .ui.button{
             background-color: #af8221;
             color: $font;
@@ -42,20 +47,58 @@
         }
 
         .ui.input{
-
             margin-bottom: 1.4rem;
-
             input{
                 background-color: #2B2F3B;
                 color:$font;
                 
-
                 &:focus{
                     border-color: $font;
                 }
             }
+        }
 
-            
+        .ui.input.error>input{
+            border-color:$error;
+            color:$font;
+        }
+    }
+}
+
+.Modal{
+    background-color: $background-primary!important;
+
+    .header{
+        background-color: $background-primary!important;
+        color: $font!important;        
+    }
+
+    .content{
+        background-color: $background-primary!important;
+        display: flex!important;
+        flex-direction: column;
+    
+        .ui.button{
+            background-color: #af8221;
+            color: $font;
+            border-radius: 1.6rem;
+        }
+    
+        .ui.input{
+            margin-bottom: 1.4rem;
+            input{
+                background-color: #2B2F3B;
+                color:$font;
+                
+                &:focus{
+                    border-color: $font;
+                }
+            }
+        }
+    
+        .ui.input.error>input{
+            border-color:$error;
+            color:$font;
         }
     }
 }
